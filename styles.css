@@ -1,0 +1,109 @@
+* {
+    transition-duration: 200ms;
+}
+
+html {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px; 
+}
+
+#main {
+    height: 1fr;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calculator {
+    height: 600px;
+    width: 500px;
+    background-color: #aaa;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 15px;
+}
+
+#display {
+    width: 1fr;
+    height: 190px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#c-d-buttons {
+    display: flex;
+    gap: 15px;
+
+}
+
+#clearBtn {
+    background-color: rgba(255,50,50,0.7);   
+}
+
+#clearBtn:hover {
+    background-color: rgba(226, 1, 1, 0.811);
+}
+
+#clearBtn:active {
+    background-color: rgba(169, 1, 1, 0.75);
+}
+
+#deleteBtn {
+    background-color: rgba(50,50,250,0.7);
+}
+
+#deleteBtn:hover {
+    background-color: rgba(80, 80, 235, 0.7);
+}
+
+#deleteBtn:active {
+    background-color: rgb(71, 71, 249);
+}
+
+#allButtons {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.buttons {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+.buttons:hover {
+    background-color: rgba(138, 137, 137, 0.001);
+}
+
+.buttons:active {
+    background-color: rgba(44, 43, 43, 0.15);
+}
+
+.mainBtn {
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+}
+
+.numbers {
+    
+}
