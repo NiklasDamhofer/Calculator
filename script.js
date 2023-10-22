@@ -1,8 +1,13 @@
 let display = document.querySelector('#display');
+const numberButton = document.querySelectorAll('.buttons');
 
-let packet1 = "";
+let currentNum = "";
+let operator = "";
+let previousNum = "";
 
-let packet2 = "";
+const currentDisplayNumber = document.querySelector(".currentNumber");
+const previousDisplayNumber = document.querySelector(".previousNumber");
+
 
 const btn7 = document.getElementById('btn7');
 const btn8 = document.getElementById('btn8');
@@ -21,17 +26,26 @@ const btn0 = document.getElementById('btn0');
 const btnequ = document.getElementById('btnequ');
 const btnadd = document.getElementById('btnadd');
 
+numberButton.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        handleNumber(e.target.textContent)
+    });
+});
 
-
+function handleNumber(number) {
+    if (currentNum.length <= 11) {
+        currentNum += number;
+        currentDisplayNumber.textContent = currentNum;
+    };
+};
 
 function showInput() {
     const content = document.createElement('div');
     content.classList.add('input');
-    content.textContent = "13 + 5";
+    content.append = packet1;
     display.append(content);
 }
 
-
-
-showInput();
-
+function handleOperator(op) {
+    
+}

@@ -101,6 +101,24 @@ h1 {
     font-size: 25px;
 }
 
+.operator {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+.operator:hover {
+    background-color: rgba(138, 137, 137, 0.001);
+}
+
+.operator:active {
+    background-color: rgba(44, 43, 43, 0.15);
+}
+
 .buttons:hover {
     background-color: rgba(138, 137, 137, 0.001);
 }
@@ -115,6 +133,12 @@ h1 {
     font-size: 25px;
 }
 
-.numbers {
-    
+.button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 25px;
 }
