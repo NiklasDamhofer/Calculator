@@ -70,17 +70,6 @@ h1 {
     background-color: rgba(169, 1, 1, 0.75);
 }
 
-#deleteBtn {
-    background-color: rgba(50,50,250,0.7);
-}
-
-#deleteBtn:hover {
-    background-color: rgba(80, 80, 235, 0.7);
-}
-
-#deleteBtn:active {
-    background-color: rgb(71, 71, 249);
-}
 
 #allButtons {
     display: grid;
@@ -149,4 +138,23 @@ h1 {
 
 .previousNumber {
     font-size: 20px;
+}
+
+.equal {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+.space {
+    width: 175%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }

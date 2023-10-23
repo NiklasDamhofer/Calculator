@@ -1,6 +1,17 @@
 let display = document.querySelector('#display');
 const numberButton = document.querySelectorAll('.buttons');
 const clear = document.querySelector('#clearBtn');
+const del = document.querySelector('#deleteBtn');
+
+
+
+const equal = document.querySelector('.equal');
+
+equal.addEventListener('click', calculate);
+
+clear.addEventListener('click', function () {
+    location.reload();
+});
 
 let currentNum = "";
 let operator = "";
@@ -44,7 +55,18 @@ function calculate() {
 
     if(operator === "+") {
         previousNum = previousNum + currentNum;
+    } else if (operator === "-") {
+        previousNum = previousNum - currentNum;
+    } else if (operator === "*") {
+        previousNum = previousNum * currentNum;
+    } else if (operator === "/") {
+        if (currentNum <= 0) {
+            previousNum = "Error"
+        }
+        previousNum = previousNum / currentNum;
     }
+    previousNum = previousNum.toString();
     previousDisplayNumber.textContent = "";
     currentDisplayNumber.textContent = previousNum;
+    operator = "";
 }
