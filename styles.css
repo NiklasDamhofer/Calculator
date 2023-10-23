@@ -142,3 +142,11 @@ h1 {
     border: 2px solid black;
     font-size: 25px;
 }
+
+.currentNumber {
+    font-size: 40px;
+}
+
+.previousNumber {
+    font-size: 20px;
+}
